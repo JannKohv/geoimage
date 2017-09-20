@@ -1,0 +1,38 @@
+
+<html>
+
+  <head>
+    <script src="camera.js"></script>
+	<script src="geoLib.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="noteSender.js"></script>
+  </head>
+  
+  <body>
+
+    <div>
+	
+	   <button onclick="getLocation()">Get location</button>
+	   <div id="geoLocation"></div>
+
+	</div>
+	
+     <div class="camera">
+       <video id="video" src="" width="320" height="240">Video stream not available.</video>
+       <button id="startbutton">Take photo</button> 
+     </div>
+	 
+     <canvas id="canvas" width="320" height="240">
+     </canvas>
+	 
+     <div class="output">
+       <img id="photo" alt="The screen capture will appear in this box." src=""> 
+     </div>
+	 
+	 <div>
+	   <button id="noteSender" onclick="sendNote()">Send test note</button>
+	 </div>
+
+  </body>
+
+</html>
